@@ -5,6 +5,8 @@ var moveX = 0;
 var moveY = 0;
 
 //MOVEMENT
+if !global.coffeeBrewing
+{
 	if (keyboard_check(vk_right))
 	{
 		moveX = spd;
@@ -25,7 +27,7 @@ var moveY = 0;
 		moveY = -spd;
 		facing = "up";
 	}
-	
+}
 	
 	//Horizontal movement
 	if (!place_meeting(x + moveX, y, obj_wall)) && (!place_meeting(x + moveX, y, obj_machine)) x += moveX;
@@ -33,40 +35,74 @@ var moveY = 0;
 	if (!place_meeting(x, y + moveY, obj_wall)) && (!place_meeting(x, y + moveY, obj_machine)) y += moveY;
 
 
-//SHOOTING BULLETS
-	if global.coffeeBrewed = true
+
+//SHOOTING COFFEE
+	if global.coffeeBrewed
 	{
 		if (keyboard_check_pressed(ord("Z")))
 		{
-		    var bullet = instance_create_layer(x, y, "Instances", obj_bullet);
-    
-		    switch (facing) {
-		        case "up":
-		            bullet.direction = 90;
-		            break;
-		        case "down":
-		            bullet.direction = 270;
-		            break;
-		        case "left":
-		            bullet.direction = 180;
-		            break;
-		        case "right":
-		            bullet.direction = 0;
-		            break;
-		    }
-		    bullet.speed = 4;
-			global.coffeeBrewed = false;
+			    var coffee = noone;
+				if (global.esCounter == 1 && global.waterCounter == 0 && global.milkCounter == 0) { var coffee = instance_create_layer(x, y, "Instances", obj_es); }
+				if (global.esCounter == 1 && global.waterCounter == 1 && global.milkCounter == 0) { var coffee = instance_create_layer(x, y, "Instances", obj_lb); }
+				if (global.esCounter == 1 && global.waterCounter == 0 && global.milkCounter == 1) { var coffee = instance_create_layer(x, y, "Instances", obj_fw); }
+				//else add screenshake and player blink maybe. counters reset
+				if (coffee != noone)
+			    {
+					switch (facing)
+					{
+				        case "up":
+				            coffee.direction = 90;
+				            break;
+				        case "down":
+				            coffee.direction = 270;
+				            break;
+				        case "left":
+				            coffee.direction = 180;
+				            break;
+				        case "right":
+				            coffee.direction = 0;
+				            break;
+				    }
+				    coffee.speed = 4;
+					global.coffeeBrewed = false;
+				}
+			}
 		}
-	}
 
 
 
-
-//If player is in brewing zone
-if (place_meeting(x, y, obj_machine_trigger))
+//If PLAYER IS IN THE BREWING ZONE
+if (place_meeting(x, y, obj_brewing_station))
 {
     if (keyboard_check_pressed(ord("Z")))
 	{
-		global.coffeeBrewed = true;
+        global.coffeeBrewing = !global.coffeeBrewing;
+		//RESET THE COUNTERS
+		global.esCounter = 0;
+		global.waterCounter = 0; 
+		global.milkCounter = 0;
+		
+		if keyboard_check_pressed(vk_up)
+		{
+			global.esCounter += 1
+		}
+		if keyboard_check_pressed(vk_left)
+		{
+			global.waterCounter += 1
+		}
+		if keyboard_check_pressed(vk_right)
+		{
+			global.milkCounter += 1
+		}
+		exit;
+	}
+
+	
+	if global.coffeeBrewing
+	{
+		if keyboard_check_pressed(ord("Z"))
+		global.coffeeBrewing = false
+		global.coffeeBrewed = true
     }
+	exit;
 }

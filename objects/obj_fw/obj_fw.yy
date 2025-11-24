@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bullet",
+  "%Name":"obj_fw",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_bullet",
+  "name":"obj_fw",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Brews",
+    "path":"folders/Objects/Brews.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_spro",
-    "path":"sprites/spr_spro/spr_spro.yy",
+    "name":"spr_fw",
+    "path":"sprites/spr_fw/spr_fw.yy",
   },
   "spriteMaskId":null,
   "visible":true,
