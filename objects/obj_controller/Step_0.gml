@@ -1,4 +1,4 @@
-if global.score = 30
+if global.score = 100
 {
 	global.gameOver = true
 }
