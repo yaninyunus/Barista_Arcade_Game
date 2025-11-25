@@ -8,6 +8,6 @@ enum CustomerState {
 }
 
 state = CustomerState.ENTER;
-speed = 2;
-direction = 0; // coming in from left
+//speed = 2;
+//direction = 0; // coming in from left
 alarm[0] = 0;  // no timer yet

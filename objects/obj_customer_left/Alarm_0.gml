@@ -1,5 +1,7 @@
-orderPlaced = false;  
-orderReceived = false
-
-direction = 0;
-speed = 2;
+// Walk in if offscreen
+if (offScreen)
+{
+    direction = 0; // move right
+    speed = 2;
+    offScreen = false;
+}
