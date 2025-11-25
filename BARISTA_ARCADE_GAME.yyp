@@ -62,6 +62,7 @@
     {"id":{"name":"obj_milk","path":"objects/obj_milk/obj_milk.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_plus","path":"objects/obj_plus/obj_plus.yy",},},
+    {"id":{"name":"obj_timer","path":"objects/obj_timer/obj_timer.yy",},},
     {"id":{"name":"obj_ui_es","path":"objects/obj_ui_es/obj_ui_es.yy",},},
     {"id":{"name":"obj_ui_fw","path":"objects/obj_ui_fw/obj_ui_fw.yy",},},
     {"id":{"name":"obj_ui_lb","path":"objects/obj_ui_lb/obj_ui_lb.yy",},},
