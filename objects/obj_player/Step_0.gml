@@ -47,6 +47,7 @@ if (place_meeting(x, y, obj_brewing_station))
         if (!global.coffeeBrewing)
         {
             global.coffeeBrewing = true;
+			instance_activate_layer("instances_brewingui")
             global.esCounter = 0;
             global.waterCounter = 0;
             global.milkCounter = 0;
@@ -56,6 +57,7 @@ if (place_meeting(x, y, obj_brewing_station))
             // exiting brewing mode: coffee is brewed!
             global.coffeeBrewing = false;
             global.coffeeBrewed = true;
+			
         }
 
         exit;

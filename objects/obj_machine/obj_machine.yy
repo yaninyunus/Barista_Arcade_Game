@@ -6,8 +6,8 @@
   "name":"obj_machine",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Environment",
+    "path":"folders/Objects/Environment.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_walls",
-    "path":"sprites/spr_walls/spr_walls.yy",
+    "name":"spr_machine",
+    "path":"sprites/spr_machine/spr_machine.yy",
   },
   "spriteMaskId":null,
   "visible":true,
