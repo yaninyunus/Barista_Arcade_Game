@@ -1,4 +1,4 @@
-if global.gameOver {exit;}
+ if global.gameOver {exit;}
 
 var spd = 3;
 var moveX = 0;
@@ -30,9 +30,9 @@ if !global.coffeeBrewing
 }
 	
 	//Horizontal movement
-	if (!place_meeting(x + moveX, y, obj_wall)) && (!place_meeting(x + moveX, y, obj_machine)) x += moveX;
+	if (!place_meeting(x + moveX, y, obj_wall)) /*&& (!place_meeting(x + moveX, y, obj_machine))/*/ x += moveX;
 	//Vertical movement
-	if (!place_meeting(x, y + moveY, obj_wall)) && (!place_meeting(x, y + moveY, obj_machine)) y += moveY;
+	if (!place_meeting(x, y + moveY, obj_wall)) /*&& (!place_meeting(x, y + moveY, obj_machine))/*/ y += moveY;
 
 
 

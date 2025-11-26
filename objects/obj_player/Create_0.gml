@@ -3,4 +3,4 @@ global.coffeeBrewing = false;
 global.coffeeBrewed = false;
 
 
-depth = 1
+depth = 2

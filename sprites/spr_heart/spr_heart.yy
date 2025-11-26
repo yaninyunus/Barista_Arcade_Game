@@ -23,7 +23,7 @@
   ],
   "name":"spr_heart",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Brewing UI",
     "path":"folders/Sprites/Brewing UI.yy",
@@ -77,7 +77,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":4,
+    "xorigin":5,
     "yorigin":4,
   },
   "swatchColours":null,
