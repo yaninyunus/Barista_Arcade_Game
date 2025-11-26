@@ -50,7 +50,6 @@
     {"id":{"name":"obj_brewing_station","path":"objects/obj_brewing_station/obj_brewing_station.yy",},},
     {"id":{"name":"obj_coffee","path":"objects/obj_coffee/obj_coffee.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
-    {"id":{"name":"obj_customer_left_02","path":"objects/obj_customer_left_02/obj_customer_left_02.yy",},},
     {"id":{"name":"obj_customer_left","path":"objects/obj_customer_left/obj_customer_left.yy",},},
     {"id":{"name":"obj_equal","path":"objects/obj_equal/obj_equal.yy",},},
     {"id":{"name":"obj_es","path":"objects/obj_es/obj_es.yy",},},
