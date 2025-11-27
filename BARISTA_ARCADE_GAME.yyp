@@ -44,6 +44,7 @@
   "resources":[
     {"id":{"name":"fnt_8bit","path":"fonts/fnt_8bit/fnt_8bit.yy",},},
     {"id":{"name":"obj_12x12","path":"objects/obj_12x12/obj_12x12.yy",},},
+    {"id":{"name":"obj_arrow_down","path":"objects/obj_arrow_down/obj_arrow_down.yy",},},
     {"id":{"name":"obj_arrow_left","path":"objects/obj_arrow_left/obj_arrow_left.yy",},},
     {"id":{"name":"obj_arrow_right","path":"objects/obj_arrow_right/obj_arrow_right.yy",},},
     {"id":{"name":"obj_arrow_up","path":"objects/obj_arrow_up/obj_arrow_up.yy",},},
@@ -71,7 +72,10 @@
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},},
     {"id":{"name":"obj_z","path":"objects/obj_z/obj_z.yy",},},
-    {"id":{"name":"rm_cafe","path":"rooms/rm_cafe/rm_cafe.yy",},},
+    {"id":{"name":"rm_20sec","path":"rooms/rm_20sec/rm_20sec.yy",},},
+    {"id":{"name":"rm_endless","path":"rooms/rm_endless/rm_endless.yy",},},
+    {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"id":{"name":"arrow_down","path":"sprites/arrow_down/arrow_down.yy",},},
     {"id":{"name":"arrow_left","path":"sprites/arrow_left/arrow_left.yy",},},
     {"id":{"name":"arrow_right","path":"sprites/arrow_right/arrow_right.yy",},},
     {"id":{"name":"arrow_up","path":"sprites/arrow_up/arrow_up.yy",},},
@@ -103,7 +107,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_cafe","path":"rooms/rm_cafe/rm_cafe.yy",},},
+    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"roomId":{"name":"rm_20sec","path":"rooms/rm_20sec/rm_20sec.yy",},},
+    {"roomId":{"name":"rm_endless","path":"rooms/rm_endless/rm_endless.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
