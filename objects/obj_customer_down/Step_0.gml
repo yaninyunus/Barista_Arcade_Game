@@ -1,7 +1,7 @@
 // HIT THE COUNTER
 if (!orderPlaced && !orderReceived)
 {
-    if place_meeting(x + 4, y, obj_wall)
+    if place_meeting(x, y - 4, obj_wall)
     {
         speed = 0;
         orderPlaced = true; // waiting at counter
@@ -11,12 +11,12 @@ if (!orderPlaced && !orderReceived)
 // ORDER RECEIVED MOVE WALK LEFT
 if (orderReceived && !orderPlaced)
 {
-    direction = 180;
+    direction = 270;
     speed = 2;
 }
 
 //IF CUSTOMER IS OFFSCREEN
-if (x < -8 && direction == 180)
+if (y > room_height + 16 && direction == 270)
 {
     offScreen = true;
     speed = 0;

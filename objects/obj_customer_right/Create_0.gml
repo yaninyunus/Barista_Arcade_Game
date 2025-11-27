@@ -3,6 +3,6 @@ orderReceived = false
 offScreen = true
 
 speed = 0
-direction = 0
+direction = 180
 
 alarm[0] = irandom_range(15, 180); // 0.25–3 seconds
