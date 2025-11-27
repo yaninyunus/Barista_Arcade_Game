@@ -21,6 +21,12 @@ if global.gameOver
 	draw_set_color(c_white);
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
-	draw_text(room_width/2, room_height/2,"GAME OVER");
+	draw_text(room_width/2, 120,"GAME OVER");
 
+	if gameOverAlarm = true
+	{
+		draw_set_font(fnt_8bit_mini);
+		draw_text(room_width/2, 184,"PRESS Z TO RESTART");
+		draw_text(room_width/2, 194,"PRESS X TO RETURN TO MENU");
+	}
 }

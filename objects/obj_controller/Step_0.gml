@@ -1,0 +1,17 @@
+if global.gameOver
+{
+	if (!alarm[1]) {alarm[1] = 60}
+	if keyboard_check_pressed(ord("Z"))
+	{
+		room_restart ()
+		global.gameOver = false
+	}
+
+	if keyboard_check_pressed(ord("X"))
+	{
+		room_goto(rm_menu)
+		global.gameOver = false
+		global.menuscreen = true
+	}
+	
+}

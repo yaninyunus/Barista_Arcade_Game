@@ -42,6 +42,7 @@
   },
   "name":"BARISTA_ARCADE_GAME",
   "resources":[
+    {"id":{"name":"fnt_8bit_mini","path":"fonts/fnt_8bit_mini/fnt_8bit_mini.yy",},},
     {"id":{"name":"fnt_8bit","path":"fonts/fnt_8bit/fnt_8bit.yy",},},
     {"id":{"name":"obj_12x12","path":"objects/obj_12x12/obj_12x12.yy",},},
     {"id":{"name":"obj_arrow_down","path":"objects/obj_arrow_down/obj_arrow_down.yy",},},
