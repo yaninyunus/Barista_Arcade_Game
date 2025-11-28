@@ -17,6 +17,6 @@ h.follow_target = id;
 
 
 
-audio_play_sound(snd_cofffee_delivered, 1, 0)
+audio_play_sound(snd_delivered, 1, 0)
 
 instance_destroy(other);

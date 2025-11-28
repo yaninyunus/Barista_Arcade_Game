@@ -67,13 +67,15 @@ if global.twentysec
 				    // entering brewing mode
 				    if (!global.coffeeBrewing)
 				    {
-				        global.coffeeBrewing = true;
+				        audio_play_sound(snd_brewoff, 1, false, 1, 0, 2)
+						global.coffeeBrewing = true;
 				        global.esCounter += 1;
 				    }
 				    else
 				    {
 				        // exiting brewing mode: coffee is brewed!
-				        global.coffeeBrewing = false;
+				        audio_play_sound(snd_brewoff, 1, false)
+						global.coffeeBrewing = false;
 				        global.coffeeBrewed = true;
 			
 				    }

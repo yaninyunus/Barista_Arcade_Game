@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_cofffee_delivered",
+  "%Name":"snd_delivered",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.17913832,
-  "name":"snd_cofffee_delivered",
+  "duration":0.44117913,
+  "name":"snd_delivered",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_cofffee_delivered.wav",
+  "soundFile":"snd_delivered.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.5,
 }
