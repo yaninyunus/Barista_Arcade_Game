@@ -24,5 +24,5 @@ if (y > room_height + 16 && direction == 270)
     orderReceived = false;
 
     // Trigger alarm to walk back in
-    if (!alarm[0]) alarm[0] = irandom_range(180, 300);
+    if (!alarm[0]) alarm[0] = irandom_range(300, 480);
 }

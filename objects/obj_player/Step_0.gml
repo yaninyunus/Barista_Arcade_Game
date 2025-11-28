@@ -89,7 +89,7 @@ if global.twentysec
 			if (keyboard_check_pressed(ord("Z")))
 			{
 					var coffee = noone;
-					if (global.esCounter == 1 && global.waterCounter == 0 && global.milkCounter == 0) { var coffee = instance_create_layer(x, y, "Instances", obj_es); }
+					if (global.esCounter >= 1 ) { var coffee = instance_create_layer(x, y, "Instances", obj_es); }
 					if (coffee != noone)
 					{
 						switch (facing)

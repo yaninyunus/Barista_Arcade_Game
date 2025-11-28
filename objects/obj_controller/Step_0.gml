@@ -5,6 +5,7 @@ if global.gameOver
 	{
 		room_restart ()
 		global.gameOver = false
+		global.score = 0;
 	}
 
 	if keyboard_check_pressed(ord("X"))
@@ -12,6 +13,7 @@ if global.gameOver
 		room_goto(rm_menu)
 		global.gameOver = false
 		global.menuscreen = true
+		global.score = 0;
 	}
 	
 }
