@@ -1,6 +1,12 @@
+//BONUS POINT SYSTEM
+orderScore = 0
+orderTimer = 0
+
+
 orderPlaced = false
 orderReceived = false
 offScreen = true
+
 
 speed = 0
 direction = 0

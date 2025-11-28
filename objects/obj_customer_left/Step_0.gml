@@ -8,6 +8,30 @@ if (!orderPlaced && !orderReceived)
     }
 }
 
+//ORDERING POINT SYSTEM + COUNTDOWN
+if (orderPlaced && !orderReceived)
+{
+    // If timer not started yet
+    if (orderScore == 0)
+    {
+        orderScore = 3;        // start at 3 points
+        orderTimer = room_speed; // 1 second timer
+    }
+
+    // Count down 1 second
+    orderTimer -= 1;
+
+    if (orderTimer <= 0)
+    {
+        orderTimer = room_speed; // reset for next second
+        orderScore -= 1;         // lose 1 point
+
+        if (orderScore < 0)
+            orderScore = 0;      // don't go negative
+    }
+}
+
+
 // ORDER RECEIVED MOVE WALK LEFT
 if (orderReceived && !orderPlaced)
 {
