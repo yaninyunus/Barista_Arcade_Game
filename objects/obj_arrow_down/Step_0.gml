@@ -1,16 +1,18 @@
 if global.menuscreen
 {
+    blink += 0.2;
 
-if blink < 10
-{
-	image_alpha = 1
-	if blink = 0 {blink += 1}
+    if blink < 10
+    {
+        image_alpha = 1; // visible
+    }
+    else if blink < 20
+    {
+        image_alpha = 0; // invisible
+    }
+    else
+    {
+        blink = 0; // restart cycle
+    }
 }
-if blink > 10
-{
-	image_alpha = 0
-	if blink = 20 {blink -= 1}
-}
-}
-
 

@@ -1,2 +1,2 @@
-t_sec = 3
+t_sec = 20
 alarm[0] = 60

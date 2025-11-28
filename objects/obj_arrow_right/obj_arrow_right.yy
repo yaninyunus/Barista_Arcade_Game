@@ -9,7 +9,10 @@
     "name":"Brewing UI",
     "path":"folders/Objects/Brewing UI.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_arrow_down",
+    "path":"objects/obj_arrow_down/obj_arrow_down.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
