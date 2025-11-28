@@ -43,7 +43,7 @@ if global.menuscreen = true
 {
 		if (place_meeting(x, y, obj_brewing_station))
 	{
-		if (keyboard_check_pressed(ord("Z")))
+		if (keyboard_check_released(ord("Z")))
 				{
 					global.menuscreen = false
 					global.twentysec = true
