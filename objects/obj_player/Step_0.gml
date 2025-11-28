@@ -6,7 +6,7 @@ var moveY = 0;
 
 //MOVEMENT
 if !global.coffeeBrewing
-{
+{	
 	if (keyboard_check(vk_right))
 	{
 		moveX = spd;
@@ -67,14 +67,14 @@ if global.twentysec
 				    // entering brewing mode
 				    if (!global.coffeeBrewing)
 				    {
-				        audio_play_sound(snd_brewoff, 1, false, 1, 0, 2)
+				        audio_play_sound(snd_brew, 1, false, 1, 0, 2)
 						global.coffeeBrewing = true;
 				        global.esCounter += 1;
 				    }
 				    else
 				    {
 				        // exiting brewing mode: coffee is brewed!
-				        audio_play_sound(snd_brewoff, 1, false)
+				        audio_play_sound(snd_brew, 1, false)
 						global.coffeeBrewing = false;
 				        global.coffeeBrewed = true;
 			

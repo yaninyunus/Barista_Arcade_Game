@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_brewon",
+  "%Name":"snd_brew",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.1046712,
-  "name":"snd_brewon",
+  "duration":0.08292517,
+  "name":"snd_brew",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_brewon.wav",
+  "soundFile":"snd_brew.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.5,
 }

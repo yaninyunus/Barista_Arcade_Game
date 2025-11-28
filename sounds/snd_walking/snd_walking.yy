@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_brewoff",
+  "%Name":"snd_walking",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
-  "name":"snd_brewoff",
+  "duration":0.8095465,
+  "name":"snd_walking",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_brewoff",
+  "soundFile":"snd_walking.wav",
   "type":0,
-  "volume":0.5,
+  "volume":0.4,
 }
