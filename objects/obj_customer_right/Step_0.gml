@@ -4,6 +4,7 @@ if (!orderPlaced && !orderReceived)
     if place_meeting(x - 4, y, obj_wall)
     {
         speed = 0;
+		image_speed  = 0
         orderPlaced = true; // waiting at counter
     }
 }
@@ -36,10 +37,12 @@ if (orderReceived && !orderPlaced)
 {
     direction = 0;
     speed = 2;
+	image_speed = 1
+	image_xscale = 1
 }
 
 //IF CUSTOMER IS OFFSCREEN
-if (x > room_width + 8 && direction == 0)
+if (x > room_width + 32 && direction == 0)
 {
     offScreen = true;
     speed = 0;

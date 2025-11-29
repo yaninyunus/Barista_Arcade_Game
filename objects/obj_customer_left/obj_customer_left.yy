@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_customer",
-    "path":"sprites/spr_customer/spr_customer.yy",
+    "name":"spr_customer_side",
+    "path":"sprites/spr_customer_side/spr_customer_side.yy",
   },
   "spriteMaskId":null,
   "visible":true,

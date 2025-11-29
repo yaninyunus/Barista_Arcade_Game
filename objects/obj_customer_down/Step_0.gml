@@ -4,6 +4,7 @@ if (!orderPlaced && !orderReceived)
     if place_meeting(x, y - 4, obj_wall)
     {
         speed = 0;
+		image_speed = 0;
         orderPlaced = true; // waiting at counter
     }
 }
@@ -31,15 +32,17 @@ if (orderPlaced && !orderReceived)
     }
 }
 
-// ORDER RECEIVED MOVE WALK LEFT
+// ORDER RECEIVED MOVE DOWN
 if (orderReceived && !orderPlaced)
 {
     direction = 270;
     speed = 2;
+	image_index = spr_customer_front
+	image_speed = 1
 }
 
 //IF CUSTOMER IS OFFSCREEN
-if (y > room_height + 16 && direction == 270)
+if (y > room_height + 48 && direction == 270)
 {
     offScreen = true;
     speed = 0;

@@ -36,6 +36,48 @@ if !global.coffeeBrewing
 
 
 
+///PLAYER ANIMATION
+		if (moveX == 0 && moveY == 0)
+		{
+			// Player is idle
+			image_speed = 0;
+
+			switch (facing)
+			{
+				case "down":  sprite_index = spr_player_front; image_xscale = 1; break;
+				case "up":    sprite_index = spr_player_back;  image_xscale = 1; break;
+				case "right": sprite_index = spr_player_side;  image_xscale = 1; break;
+				case "left":  sprite_index = spr_player_side;  image_xscale = -1; break;
+			}
+		}
+		else
+		{
+			// Player is walking
+			image_speed = 1;
+
+			if (facing == "down")
+			{
+				sprite_index = spr_player_front;
+				image_xscale = 1;
+			}
+			else if (facing == "up")
+			{
+				sprite_index = spr_player_back;
+				image_xscale = 1;
+			}
+			else if (facing == "right")
+			{
+				sprite_index = spr_player_side;
+				image_xscale = 1;
+			}
+			else if (facing == "left")
+			{
+				sprite_index = spr_player_side;
+				image_xscale = -1;
+			}
+		}
+
+
 
 
 //IF IN MENU SCREEN
