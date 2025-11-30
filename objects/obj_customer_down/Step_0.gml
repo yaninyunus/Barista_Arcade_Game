@@ -35,10 +35,10 @@ if (orderPlaced && !orderReceived)
 // ORDER RECEIVED MOVE DOWN
 if (orderReceived && !orderPlaced)
 {
+	sprite_index = spr_customer_front
+	image_speed = 1
     direction = 270;
     speed = 2;
-	image_index = spr_customer_front
-	image_speed = 1
 }
 
 //IF CUSTOMER IS OFFSCREEN

@@ -89,6 +89,8 @@ if global.menuscreen = true
 				{
 					global.menuscreen = false
 					global.twentysec = true
+					audio_sound_gain(snd_bkg_music, 0, 0);
+					audio_sound_gain(snd_bkg_20sec, 0.05, 0);
 					room_goto(rm_20sec)
 
 				}

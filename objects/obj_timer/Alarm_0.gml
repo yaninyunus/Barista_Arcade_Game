@@ -7,4 +7,5 @@ if !(t_sec = 0)
 else
 {
 	global.gameOver = true
+	audio_play_sound(snd_gameover, 1, false)
 }
