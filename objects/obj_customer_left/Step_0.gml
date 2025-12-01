@@ -51,5 +51,5 @@ if (x < -32 && direction == 180)
     orderReceived = false;
 
     // Trigger alarm to walk back in
-    if (!alarm[0]) alarm[0] = irandom_range(300, 480);
+    if (!alarm[0]) alarm[0] = irandom_range(200, 420);
 }

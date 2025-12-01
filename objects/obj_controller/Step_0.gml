@@ -24,8 +24,19 @@ if global.gameOver
 	exit
 }
 
-
 if keyboard_check_pressed(ord("R"))
 	{
 		room_restart()
+	}
+
+
+
+//HighsScore Rewrite
+	if (global.score > global.highScore)
+	{
+		global.highScore = global.score;
+
+		ini_open("save.ini");
+		ini_write_real("Score", "High", global.highScore);
+		ini_close();
 	}

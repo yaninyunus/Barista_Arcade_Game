@@ -107,9 +107,11 @@ if global.twentysec
 			//ENTER OR EXIT BREWING MODE
 			if (keyboard_check_pressed(ord("Z")))
 			{
+					audio_play_sound(snd_brew, 1, false, 1, 0, 2)
+					global.esCounter += 1;
 			        global.coffeeBrewed = true;
 				    // entering brewing mode
-				    if (!global.coffeeBrewing)
+				   /* if (!global.coffeeBrewing)
 				    {
 				        audio_play_sound(snd_brew, 1, false, 1, 0, 2)
 						global.coffeeBrewing = true;
@@ -123,6 +125,7 @@ if global.twentysec
 				        global.coffeeBrewed = true;
 			
 				    }
+					/*/
 
 				    exit;
 				}
