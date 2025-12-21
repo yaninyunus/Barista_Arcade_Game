@@ -18,7 +18,7 @@ if global.gameOver
 	if gameOverAlarm = true
 	{
 		draw_set_font(fnt_8bit_mini);
-		draw_text(room_width/2, 186,"PRESS Z & R TO RESTART");
+		draw_text(room_width/2, 186,"PRESS R TO RESTART");
 		draw_text(room_width/2, 196,"PRESS X TO RETURN TO MENU");
 	}
 	exit;

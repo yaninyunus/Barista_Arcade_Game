@@ -3,7 +3,7 @@ if global.gameOver
 	audio_sound_gain(snd_bkg_music, 0.05, 0);
 	audio_sound_gain(snd_bkg_20sec, 0, 0);
 	if (!alarm[1]) {alarm[1] = 60}
-	if keyboard_check(ord("Z")) && keyboard_check(ord("R"))
+	if keyboard_check(ord("R"))
 	{
 		room_restart ()
 		global.gameOver = false
